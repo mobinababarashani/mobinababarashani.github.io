@@ -292,3 +292,32 @@ html[data-theme="light"] .moon-icon { display: block; }
 /* User-supplied wind turbine diagram: preserve the full square illustration. */
 .project-card:last-child .project-media { background: #ffffff; }
 .project-card:last-child .project-media img { object-fit: contain; padding: 14px; background: #ffffff; }
+
+/* 2026 portfolio refresh */
+.hero h1 { font-size: clamp(3rem, 5.35vw, 5.65rem); }
+.hero-copy { position: relative; }
+.hero-copy::before { content: "DATA / AI / SYSTEMS"; display: block; margin-bottom: 22px; color: color-mix(in srgb, var(--accent) 50%, transparent); font: 700 .64rem/1 "SFMono-Regular", Consolas, monospace; letter-spacing: .28em; }
+.hero-lead { max-width: 740px; }
+.project-data { border-color: color-mix(in srgb, var(--accent) 42%, var(--border)); background: linear-gradient(145deg, color-mix(in srgb, var(--accent) 7%, var(--surface-solid)), var(--surface)); }
+.data-console { min-height: 520px; padding: 30px; display: flex; flex-direction: column; justify-content: center; background: radial-gradient(circle at 82% 12%, color-mix(in srgb, var(--accent-blue) 18%, transparent), transparent 35%), #07111f; }
+.console-head { display: flex; align-items: center; gap: 7px; padding: 13px 16px; border: 1px solid rgba(158,177,199,.2); border-bottom: 0; border-radius: 18px 18px 0 0; background: #0d1c30; }
+.console-head span { width: 9px; height: 9px; border-radius: 50%; background: #ff6b67; }
+.console-head span:nth-child(2) { background: #ffca58; }
+.console-head span:nth-child(3) { background: var(--accent); }
+.console-head code { margin-left: 8px; color: #7f90a7; font-size: .72rem; }
+.console-body { padding: 28px; border: 1px solid rgba(158,177,199,.2); border-radius: 0 0 18px 18px; background: rgba(8,20,35,.78); box-shadow: 0 28px 70px rgba(0,0,0,.25); }
+.console-body p { margin: 0 0 18px; color: #a9b6c7; font: 500 .81rem/1.7 "SFMono-Regular", Consolas, monospace; }
+.console-body p b { display: inline-block; width: 34px; color: var(--accent); }
+.console-result { margin-top: 30px; padding-top: 22px; border-top: 1px solid rgba(158,177,199,.16); }
+.console-result span { display: block; margin-bottom: 7px; color: var(--accent); font-size: .62rem; font-weight: 900; letter-spacing: .16em; }
+.console-result strong { color: #fff; font-size: 1.08rem; }
+.confidential-note { margin-top: 25px !important; padding: 13px 15px; border-left: 2px solid var(--accent); background: color-mix(in srgb, var(--accent) 7%, transparent); font-size: .8rem; }
+.credentials-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 88px; align-items: start; }
+.credentials-intro { max-width: 520px; margin-top: 24px; color: var(--text-muted); }
+.credential-list { border-top: 1px solid var(--border); }
+.credential-list>div { display: grid; grid-template-columns: 45px 1fr; gap: 20px; padding: 23px 0; border-bottom: 1px solid var(--border); }
+.credential-list span { color: var(--accent); font-size: .71rem; font-weight: 900; }
+.credential-list p { margin: 0; color: var(--text-muted); }
+.credential-list strong { display: block; margin-bottom: 4px; color: var(--heading); font-size: 1rem; }
+@media (max-width: 980px) { .credentials-layout { grid-template-columns: 1fr; gap: 12px; } .data-console { min-height: 390px; } }
+@media (max-width: 760px) { .hero h1 { font-size: clamp(2.7rem, 13vw, 4.35rem); } .data-console { min-height: 330px; padding: 16px; } .console-body { padding: 20px; } }
